@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "morefallingleaves",
+  "version": "${version}",
+  "name": "MoreFallingLeaves",
+  "description": "A simple client mod giving you more control over falling leaves.",
+  "authors": ["JustAHuman"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/morefallingleaves",
+    "sources": "https://github.com/JustAHuman-xD/MoreFallingLeaves",
+    "issues": "https://github.com/JustAHuman-xD/MoreFallingLeaves/issues",
+    "discord": "https://discord.gg/y6fV6pbgHB"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/y6fV6pbgHB"
+      },
+      "update_checker": true
+    }
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/morefallingleaves/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.justahuman.morefallingleaves.MoreFallingLeaves"
+    ],
+    "modmenu": [
+      "me.justahuman.morefallingleaves.MoreFallingLeaves"
+    ]
+  },
+  "mixins": [
+    "morefallingleaves.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "cloth-config": "*"
+  }
+}

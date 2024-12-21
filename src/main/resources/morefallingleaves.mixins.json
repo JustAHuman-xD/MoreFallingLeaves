@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.justahuman.morefallingleaves.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ParticleLeavesBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
